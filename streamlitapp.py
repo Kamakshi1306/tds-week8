@@ -5,18 +5,15 @@ def find_largest_number(num1, num2, num3):
     return max(num1, num2, num3)
 
 def main():
-    st.title("Find the Largest Number")
+    st.title("Find the Largest Number App")
 
     # Input for three numbers
     num1 = st.number_input("Enter the first number:", value=0, step=1)
     num2 = st.number_input("Enter the second number:", value=0, step=1)
     num3 = st.number_input("Enter the third number:", value=0, step=1)
 
-    # Calculate button
-    calculate_button = st.button("Find")
-    
-    # Handle button click
-    if calculate_button:
+    # Find button
+    if st.button("Find"):
         # Find the largest number
         result = find_largest_number(num1, num2, num3)
 
@@ -25,3 +22,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    
