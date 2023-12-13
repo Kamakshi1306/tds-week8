@@ -12,11 +12,13 @@ def main():
     num2 = st.number_input("Enter the second number:", value=0, step=1)
     num3 = st.number_input("Enter the third number:", value=0, step=1)
 
-    # Find the largest number
-    result = find_largest_number(num1, num2, num3)
+    # Calculate button
+    if st.button("Calculate"):
+        # Find the largest number
+        result = find_largest_number(num1, num2, num3)
 
-    # Display the result
-    st.write(f"The largest number is: {result}")
+        # Display the result
+        st.write(f"The largest number is: {result}")
 
 if __name__ == "__main__":
     main()
