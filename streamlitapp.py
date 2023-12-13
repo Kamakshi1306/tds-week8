@@ -13,7 +13,10 @@ def main():
     num3 = st.number_input("Enter the third number:", value=0, step=1)
 
     # Calculate button
-    if st.button("Find"):
+    calculate_button = st.button("Find")
+    
+    # Handle button click
+    if calculate_button:
         # Find the largest number
         result = find_largest_number(num1, num2, num3)
 
